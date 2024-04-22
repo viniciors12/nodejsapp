@@ -1,5 +1,5 @@
-job('Aplicacion Node.js DSL') {
-    description('Aplicación Node JS DSL para el curso de Jenkins')
+job('SCM Jenkins app') {
+    description('Node JS Jenkins SCM')
     scm {
         git('https://github.com/viniciors12/nodejsapp.git', 'master') { node ->
             node / gitConfigName('viniciors12')
