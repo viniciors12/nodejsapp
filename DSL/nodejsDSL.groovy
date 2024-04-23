@@ -19,6 +19,6 @@ job('SCM Jenkins app') {
         nodejs('nodejs')
     }
     steps {
-        shell("bash jobscript.sh")
+        shell("bash ./jobscript.sh")
     }
 }
