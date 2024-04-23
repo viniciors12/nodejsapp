@@ -7,12 +7,13 @@ job('SCM Jenkins app') {
         }
     }
     parameters {
-   		stringParam('nombre', defaultValue = 'Vinicio', description = 'Parametro de cadena para el Job Booleano')
-        choiceParam('planeta', ['Planeta 1', 'Planeta 2', 'Tierrra', 'Marte', 'Jupiter', 'Saturno', 'Urano', 'Neptuno'])
+   		stringParam('nombre', defaultValue = 'Vini', description = 'Parametro de cadena para el Job Booleano')
+        choiceParam('planeta', ['Mercurio', 'Pluto', 'Tierrra', 'Marte', 'Jupiter', 'Saturno', 'Urano', 'Neptuno'])
         booleanParam('agente', false)
     }
     triggers {
         scm('H/7 * * * *')
+        githubPush()
     }
     wrappers {
         nodejs('nodejs')
