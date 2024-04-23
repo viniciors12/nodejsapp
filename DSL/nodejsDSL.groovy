@@ -13,12 +13,11 @@ job('SCM Jenkins app') {
     }
     triggers {
         scm('H/7 * * * *')
-        githubPush()
     }
     wrappers {
         nodejs('nodejs')
     }
     steps {
-        shell("echo Hello world!")
+        shell("npm install")
     }
 }
