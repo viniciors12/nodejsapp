@@ -19,6 +19,6 @@ job('SCM Jenkins app') {
         nodejs('nodejs')
     }
     steps {
-        shell("echo Hello world!!!!!!")
+        shell("echo Hello world!")
     }
 }
