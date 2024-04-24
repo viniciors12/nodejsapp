@@ -8,7 +8,7 @@ job('SCM Jenkins app') {
     }
     parameters {
    		stringParam('nombre', defaultValue = 'Vini', description = 'Parametro de cadena para el Job Booleano')
-        choiceParam('planeta', ['Mercurio', 'Pluto', 'Tierrra', 'Marte', 'Jupiter', 'Saturno', 'Urano', 'Neptuno'])
+        choiceParam('planeta', ['Sun', 'Pluto', 'Tierrra', 'Marte', 'Jupiter', 'Saturno', 'Urano', 'Neptuno'])
         booleanParam('agente', false)
     }
     triggers {
